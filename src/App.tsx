@@ -22,7 +22,7 @@ function App() {
   const [news, setNews] = useState<any>([]);
 
   const fetchNews = async () => {
-    const url = `http://localhost:3000/`;
+    const url = `https://malayalam-news-aggregator.onrender.com/`;
     const response = await fetch(url);
     const data: any = await response.json();
     if (data && data.length) {
